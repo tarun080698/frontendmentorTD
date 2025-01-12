@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>QR Code Component</title>
+
+    <style>
+      /* General Reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 100%;
+        padding: 1rem;
+        place-items: center;
+      }
+
+      .card {
+        max-width: 300px;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .qr_image {
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: hsl(218, 44%, 22%);
+      }
+
+      .description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: hsl(220, 15%, 55%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          class="qr_image"
+          src="./images/image-qr-code.png"
+          alt="Scan this QR code to visit Frontend Mentor"
+        />
+        <h1 class="title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://tarundadlani.vercel.app/">Tarun Dadlani</a>.
+      </div>
+    </div>
+  </body>
+</html>
